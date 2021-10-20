@@ -1,0 +1,70 @@
+body { 
+    background-color: white;
+}
+main {
+    display: grid;
+    font-weight:100;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 15px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.glasses{
+    grid-column: 1/2;
+    margin: 0;
+    max-width: 500px;
+
+}
+
+.title {
+    grid-column: 2/2;
+    grid-row: 1/6;
+    text-align: center;
+    
+}
+
+.description {
+    grid-column: 2/2;
+    grid-row: 2/6;
+    font-size:20px;
+    text-align:center;
+}
+
+.email{
+    grid-column: 2/2;
+    grid-row: 3/6;
+    text-align:left;
+}
+
+.name{
+    grid-column: 2/2;
+    grid-row: 4/6;
+    text-align:left;
+}
+
+.opt {
+    grid-column: 2/2;
+    grid-row: 5/6;
+    text-align:left;
+}
+
+.subscribe {
+    grid-column: 2/2;
+    grid-row: 6/6;
+    background-color:orange;
+    padding:30px;
+    border-radius:5px;
+    max-width:25%;
+    box-sizing:border-box;
+}
+
+.sub {
+    color:white;
+}
+
+.rcolumn {
+    grid-column:2/2;
+}
