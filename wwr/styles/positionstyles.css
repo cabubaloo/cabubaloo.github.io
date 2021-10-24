@@ -155,27 +155,36 @@ background-color: blue;
 } 
 /* Activity 6 styles */ 
 .content6 {
-  /* This is the parent of the activity 6 boxes. */
+  /* This is the parent of the activity 2 boxes. */
 }
 .red6 {
-width: 100px; 
-height: 100px; 
+width: 400px; 
+height: 200px; 
 background-color: red; 
+z-index: 3:
 } 
-.green6 {
-width: 100px; 
-height: 100px; 
+.green6 { 
+width: 200px; 
+height: 200px; 
 background-color: green; 
+margin-top: 200px;
+z-index: 4:
 } 
 .yellow6 {
-width: 100px; 
-height: 100px; 
+width: 200px; 
+height: 400px; 
 background-color: gold; 
+margin-top: -400px;
+margin-left: 400px;
+z-index: 2:
 } 
 .blue6 {
-width: 100px; 
-height: 100px; 
+width: 400px; 
+height: 400px; 
 background-color: blue; 
+margin-top: -500px;
+margin-left: 100px;
+z-index: -1;
 } 
 
 
