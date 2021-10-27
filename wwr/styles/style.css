@@ -21,9 +21,7 @@ h2 {
 }
 
 h1 {
-    background-color: rgb(80, 228, 216);
     padding:100px 50px 150px 200px;
-    border: 1px solid black;
     margin: 50px;
 }
 .latin {
@@ -71,7 +69,7 @@ nav a:hover {
 }
 
 #hero-msg h4 {
-    color: white;
+    color: grey;
     margin-top: 100px;
 }
 
