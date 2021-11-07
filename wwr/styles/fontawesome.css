@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.holdsec {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 4fr;
+}
+#oops {
+    font-size: 40px;
+    color: black;
+    font-family: "Open Sans";
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#wrong {
+    font-size: 25px;
+    color: grey;
+    font-family: "Open Sans";
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#button {
+    font-size: 25px;
+    color: white;
+    font-family: "Open Sans";
+    max-width: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#why {
+    font-size: 25px;
+    color: blue;
+    font-family: "Open Sans";
+    border-radius: 20px;
+    margin-top: 30px;
+}
