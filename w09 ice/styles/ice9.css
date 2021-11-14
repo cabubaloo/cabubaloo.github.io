@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+#main-box {
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    align-self: center;
+    margin-left: 40%;
+}
+.bottom {
+    background-color: #3f5b8b;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 1px;
+}
+.team h3 {
+    color: #3f5b8b;
+}
+.team {
+    padding: 10%;
+    font-weight: bold;
+}
+.team p {
+    color: #8c818c;
+}
+.read {
+    background-color: #3f5b8b;
+
+}
+.views {
+    background-color: #3f5b8b;
+
+}
+.comments {
+    background-color: #3f5b8b;
+
+}

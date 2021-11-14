@@ -232,7 +232,9 @@ main section img {
     z-index: -1;
 }
 
-home-grid
+#hero-img {
+    width:100%;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
