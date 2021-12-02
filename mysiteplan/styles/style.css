@@ -15,7 +15,7 @@ header {
 #link1 {
     grid-column: 3/4;
     grid-row: 1/2;
-    font-size: 50px;
+    font-size: 20px;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -23,7 +23,7 @@ header {
 #link2 {
     grid-column: 5/6;
     grid-row: 1/2;
-    font-size: 50px;
+    font-size: 20px;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -31,7 +31,7 @@ header {
 #link3 {
     grid-column: 7/8;
     grid-row: 1/2;
-    font-size: 50px;
+    font-size: 20px;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -44,53 +44,83 @@ header {
 
 
 #main1 {
+    outline: 2px solid black;
     background-color: #A0B2A6;
     display: grid;
     grid-template-columns: 40% 60%;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
 }
 .mpic {
-    width: 100%;
-    height: 700px;
+    width: 50%;
+    height: 250px;
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-left: auto;
+    margin-right: auto;
 }
 #mtnpardiv {
     grid-column: 2/3;
     grid-row: 1/2;
-}
-#mtnpar {
-    font-size: 45px;
+    font-size: 20px;
     height: 100px;
-    line-height: 100px;
+    line-height: 50px;
     text-align: center;
     margin-right: 30px;
     margin-left: 30px;
+}
+#mtnpar {
+    font-size: 20px;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
 }
 
 
 
 #main2 {
+    outline: 2px solid black;
     background-color: #A0B2A6;
     display: grid;
     grid-template-columns: 60% 40% ;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
 }
 #rdpardiv {
     grid-column: 1/2;
     grid-row: 2/3;
-}
-.rpic {
-    width: 100%;
-    height: 700px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#rdpar {
-    font-size: 45px;
+    font-size: 20px;
     height: 100px;
-    line-height: 100px;
+    line-height: 50px;
     text-align: center;
     margin-right: 30px;
     margin-left: 30px;
+}
+.rpic {
+    width: 50%;
+    height: 250px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rdpar {
+    font-size: 20px;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#pg3link {
 }
 
 #page2main {
@@ -107,12 +137,14 @@ footer {
 }
 #endmsg {
     grid-column: 1;
-    font-size: 50px;
+    font-size: 20px;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
 }
 #endlink {
     grid-column: 2;
-    font-size: 50px;
+    font-size: 20px;
     height: 100px;
     line-height: 100px;
     text-align: center;
