@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
 header {
     background-color: #61988E;
     display: grid;
     grid-template-columns: 150px auto;
+    font-family: Lato, Helvetica, sans-serif;
 }
+
+body {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
 #logo_link {
     padding-top: 5px;
     justify-self: center;
@@ -134,6 +142,7 @@ footer {
     background-color: #61988E;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    font-family: Lato, Helvetica, sans-serif
 }
 #endmsg {
     grid-column: 1;
@@ -185,10 +194,69 @@ footer {
   }
   
   /* Style the accordion panel. Note: hidden by default */
-  .panel {
+  #panel1 {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    display: grid;
+  }
+
+  #roadtire1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: auto;
+      width: 140px;
+  }
+  #roadtire1link {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      text-align: center;
+  }
+
+  #roadtire2 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: auto;
+      width: 140px;
+  }
+  #roadtire2link {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      text-align: center;
+  }
+
+
+
+  #panel2 {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    grid-template-columns: 150px 1fr;
+    display: grid;
+  }
+
+  #roadclothes1 {
+      grid-column: 1/2;
+      height: auto;
+      width: 140px;
+  }
+  #roadclothes1link {
+      grid-column: 2/3;
+      text-align: center;
+  }
+
+  #roadclothes2 {
+      grid-column: 1/2;
+      height: auto;
+      width: 140px;
+  }
+  #roadclothes2link {
+      grid-column: 2/3;
+      text-align: center;
   }
