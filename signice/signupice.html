@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/styles.css">
+   <title>Sign Up</title>
+</head>
+<body>
+    <section id="sec1">
+    <h1>Sign Up</h1>
+    <p>Please sign up with your real name.<br>Once you have entered it you will not be able to change it.<br>
+    <b>A password will be sent to your email, so please make<br>sure it is correct</b></p>
+    <section class="form">
+        <div id="signup"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <input type="text" id="name" name="name" placeholder="Enter your name:">
+                </li>
+                <li>
+                    <input type="text" id='email' name="email" placeholder="Enter your email:">
+                </li>
+                <li>
+                    <input type="submit" id="button" value="Sign up">
+                </li>
+            </ul>
+    </form>
+    </section>
+    </section>
+   <section id="sec2">
+       <img src="images/london.jpg" alt="">
+   </section>
+   <script>
+       const feedbackElement = document.getElementById('signup');
+       const formElement = document.forms[0];
+       formElement.addEventListener('submit', function(e) {
+           e.preventDefault();
+           feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'!<br> Thank you for signing up with us!!';
+           feedbackElement.style.display = "block";
+           document.body.classList.toggle('moveDown');
+       });
+   </script>
+</body>
+</html>
