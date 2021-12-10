@@ -9,35 +9,84 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="images/bikelogo.jpg" alt="bike logo">
-        <nav>
-            <a href="index.html">Main page</a>
-            <a href="page2.html">Page 2</a>
-            <a href="site-plan.html">Site Plan</a>
-        </nav>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/bikelogo.jpg" alt="Bike Logo">
+        </a>
+        <a id="link1" href="index.html">Main Page</a>
+        <a id="link2" href="page2.html">Road Biking</a>
+        <a id="link3" href="site-plan.html">Site Plan</a>
     </header>
 
-    <main>
-        <img class="road bike pic" src="images/roadbike.jpg" alt="road bike picture">
-        <div>
+    <main id="page2main">
+        <button class="accordion">Tires</button>
+        <div id="panel1">
+            <img id="mountaintire1" src="images/mountaintire1.webp" alt="Mountain tire 1">
+            <a id="mountaintire1link" href="https://www.amazon.com/Schwinn-Replacement-Mountain-1-95-Inch-Carbon/dp/B0030RMC10/ref=sr_1_2?keywords=mountain%2Bbiking%2Btires&qid=1639127894&sr=8-2&th=1">Mountain tire 1 site link</a>
+            <img id="mountaintire2" src="images/mountaintire2.webp" alt="Mountain tire 2">
+            <a id="mountiantire2link" href="https://www.amazon.com/WTB-Velociraptor-Country-Mountain-26x2-1/dp/B001CJV7NW/ref=sr_1_5?keywords=mountain%2Bbiking%2Btires&qid=1639127894&sr=8-5&th=1&psc=1">Mountain tire 2 site link</a>
+        </div>
 
+        <button class="accordion">Clothes</button>
+        <div id="panel2">
+            <img id="mountainclothes1" src="images/mountainclothes1.webp" alt="Mountain bike clothes 1">
+            <a id="mountainclothes1link" href="https://www.amazon.com/Downhill-Cycling-Jersey-Clothing-Mountain/dp/B081HDQY91/ref=sr_1_21?keywords=mountain+biking+clothes&qid=1639128086&sr=8-21">Mountain clothes 1 site link</a>
+            <img id="mountainclothes2" src="images/mountainclothes2.webp" alt="Mountain bike clothes 2">
+            <a id="mountainclothes2link" href="https://www.amazon.com/Fox-Racing-Defend-Mountain-X-Large/dp/B08TG3RZY7/ref=sr_1_24?keywords=mountain+biking+clothes&qid=1639128086&sr=8-24">Mountain clothes 2 site link</a>
         </div>
     </main>
 
     <footer>
-        <h3>Biking website; 2021 - Caleb Wolfert</h3>
-        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h3 id="endmsg">Biking website; 2021 - Caleb Wolfert</h3>
+        <h3 id="endlink"><a href="site-plan.html">Site Plan</a></h3>
         <div class="social">
-            <a href="https://facebook.com" target="_blank">
+            <a id="facebook" href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="httpls://twitter.com" target="_blank">
+            <a id="twitter" href="httpls://twitter.com" target="_blank">
                 <img src="images/twitter.png" alt="twitter icon">
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a id="instagram"  href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
     </footer>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+</script>
+
 </body>
 </html>
