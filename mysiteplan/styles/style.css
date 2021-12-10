@@ -4,11 +4,11 @@ header {
     background-color: #61988E;
     display: grid;
     grid-template-columns: 150px auto;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
 }
 
 body {
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
 
@@ -80,7 +80,7 @@ body {
     margin-left: 30px;
 }
 #mtnpar {
-    font-size: 20px;
+    font-size: 18px;
     height: 100px;
     line-height: 50px;
     text-align: center;
@@ -120,7 +120,7 @@ body {
     margin-right: auto;
 }
 #rdpar {
-    font-size: 20px;
+    font-size: 18px;
     height: 100px;
     line-height: 50px;
     text-align: center;
@@ -143,14 +143,15 @@ footer {
     background-color: #61988E;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: Lato, Helvetica, sans-serif
+    font-family: 'Shippori Antique B1', sans-serif;
 }
 #endmsg {
     grid-column: 1;
     font-size: 20px;
     height: 100px;
-    line-height: 100px;
+    line-height: 30px;
     text-align: center;
+    padding-top: 20px;
 }
 #endlink {
     grid-column: 2;
@@ -160,16 +161,26 @@ footer {
     text-align: center;
 }
 .social {
-    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #facebook {
     width: 150px;
+    grid-column: 1;
+    text-align: center;
+    padding: 38px;
 }
 #twitter {
     width: 150px;
+    grid-column: 2;
+    text-align: center;
+    padding: 38px;
 }
 #instagram {
     width: 150px;
+    grid-column: 3;
+    text-align: center;
+    padding: 38px;
 }
 
 
@@ -177,6 +188,7 @@ footer {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-family: 'Quicksand', sans-serif;
     background-color: #eee;
     color: #444;
     cursor: pointer;
